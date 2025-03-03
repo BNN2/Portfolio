@@ -1,0 +1,203 @@
+/* General styles */
+body {
+    font-family: "Courier New", monospace;
+    background-color: #000; /* Matrix Dark Background */
+    color: #00ff00; /* Neon Green Text */
+}
+
+/* Neon Section Divider */
+.neon-divider {
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(to right, transparent, #00ff00, transparent);
+    box-shadow: 0px 0px 15px #00ff00;
+    margin: 30px 0;
+}
+
+/* 🔥 Make Navbar Buttons & Title Neon Green */
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #00ff00 !important; /* Neon Green */
+    font-weight: bold;
+    text-shadow: 0px 0px 8px #00ff00; /* Soft Glow */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect - Brighter Glow */
+.navbar .navbar-brand:hover,
+.navbar .nav-link:hover {
+    color: #ffffff !important; /* White on Hover */
+    text-shadow: 0px 0px 15px #00ff00; /* Stronger Glow */
+}
+
+/* Force Neon Green on Active/Current Page Link */
+.navbar .nav-item .nav-link.active {
+    color: #00ff00 !important;
+    text-shadow: 0px 0px 12px #00ff00;
+}
+
+/* Hero Section */
+#hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #00ff00;
+    text-shadow: 0px 0px 10px #00ff00;
+    overflow: hidden;
+}
+
+#hero-section video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+#hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+#hero-section * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Mission Section */
+#mission-section {
+    background-color: #111;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Skills Section */
+#skills-section {
+    background-color: #111;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.skill-img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    border: 2px solid #00ff00;
+    box-shadow: 0px 0px 10px #00ff00;
+}
+
+#skills-section .row {
+    display: flex;
+    justify-content: center;
+}
+
+#skills-section p {
+    font-size: 1.3rem;
+    color: #00ff00;
+    text-shadow: 0px 0px 5px #00ff00;
+}
+
+#skills-section .col-lg-3 {
+    padding: 20px;
+}
+
+/* Contact Section */
+#contact-section {
+    background-color: #111;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-icon {
+    font-size: 50px;
+    color: #00ff00;
+    transition: all 0.3s ease-in-out;
+    margin: 20px;
+}
+
+.contact-icon:hover {
+    color: #ffffff;
+    text-shadow: 0px 0px 20px #00ff00;
+}
+
+/* Responsive layout for Contact Section */
+@media (max-width: 768px) {
+    #contact-section .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-icon {
+        margin: 15px 0;
+    }
+}
+
+/* 🔥 Smaller Carousel but Bigger Images */
+#carousel-section {
+    max-width: 700px; /* Slightly wider */
+    margin: auto;
+    text-align: center;
+}
+
+/* Carousel Inner - Slightly Bigger */
+#carouselExampleIndicators .carousel-inner {
+    max-height: 400px; /* Increase height */
+}
+
+/* Bigger Images Without Cropping */
+#carouselExampleIndicators .carousel-item img {
+    width: 100%;
+    height: 400px; /* Increase height */
+    object-fit: contain; /* Ensures images fit without being cropped */
+}
+
+/* Responsive Carousel (Mobile Adjustments) */
+@media (max-width: 768px) {
+    #carousel-section {
+        max-width: 90%; /* Keep it smaller for mobile */
+    }
+
+    #carouselExampleIndicators .carousel-inner {
+        max-height: 350px; /* Increase height for mobile */
+    }
+
+    #carouselExampleIndicators .carousel-item img {
+        height: 350px; /* Increase image height */
+    }
+}
+
+/* 🔥 Change Carousel Arrows to Neon Green */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: brightness(0) invert(1) sepia(100%) hue-rotate(90deg) saturate(500%);
+}
+/* Offset for section scroll (to align with neon dividers) */
+section {
+    scroll-margin-top: 110px; /* Adjust based on navbar height */
+}

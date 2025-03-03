@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">  
+    <meta name="milestone" content="Portfolio">
+    <title>My Portfolio</title>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="homeIcon.png" alt="Home Logo" width="40" height="40">
+                My Portfolio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#mission-section">Mission</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills-section">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero section with background video -->
+    <section id="hero-section" class="d-flex flex-column justify-content-center align-items-center text-white text-center">
+        <video autoplay loop muted playsinline>
+            <source src="img/16500-273202599_small.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+        <img src="1733576491573.jpg" alt="Headshot" class="rounded-circle border border-white mb-3" width="150" height="150">
+        <h1>Billal Nakbeen</h1>
+        <p>Web Developer | Creative Thinker | Problem Solver</p>
+    </section>
+
+    <div class="neon-divider"></div>
+
+   <!-- Mission Section -->
+<section id="mission-section" class="container py-5">
+    <h2 class="text-center">Mission</h2>
+    <div class="row align-items-center">
+        <div class="col-md-6 text-center">
+            <img src="1693924455872.png" alt="Mission Image" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <p class="text-center">
+                To be a software developer by Summer 2025.<br><br>
+                My goal is to develop scalable and efficient applications that make a real-world impact.  
+                I am dedicated to mastering **full-stack development**, improving my **problem-solving skills**,  
+                and staying ahead of industry trends in **cloud computing and artificial intelligence**.  
+                <br><br>
+                My mission is to **continuously learn**, contribute to innovative projects, and collaborate with  
+                like-minded professionals to build **cutting-edge software solutions**.  
+                <br><br>
+                The journey to becoming a **software engineer** is one of **dedication, persistence, and creativity**,  
+                and I am committed to pushing myself to achieve this goal.
+            </p>
+        </div>
+    </div>
+</section>
+
+<div class="neon-divider"></div>
+
+<!-- Skills Section -->
+<section id="skills-section" class="container py-5">
+    <h2 class="text-center">Skills</h2>
+    <p class="text-center">
+        As a **full-stack web developer**, I specialize in front-end and back-end technologies  
+        to build **dynamic, user-friendly applications**.
+    </p>
+    <div class="row text-center">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="html-icon.png" alt="HTML" class="skill-img">
+            <p><strong>HTML</strong><br>Structuring the web with clean, semantic markup.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="css-icon.png" alt="CSS" class="skill-img">
+            <p><strong>CSS</strong><br>Designing responsive and visually appealing interfaces.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="bootstrap-icon.png" alt="Bootstrap" class="skill-img">
+            <p><strong>Bootstrap</strong><br>Speeding up development with a powerful front-end framework.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="javascript-icon.png" alt="JavaScript" class="skill-img">
+            <p><strong>JavaScript</strong><br>Creating interactive, dynamic user experiences.</p>
+        </div>
+    </div>
+</section>
+
+<div class="neon-divider"></div>
+
+<!-- Contact Section -->
+<section id="contact-section" class="container py-5 text-center">
+    <h2>Contact</h2>
+    <p class="text-center">
+        Feel free to **connect with me** for opportunities, collaborations, or just a chat!  
+        Whether you're looking for a **developer**, **collaborator**, or just someone to discuss  
+        tech trends with, I'm always open to new connections.  
+    </p>
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <a href="https://www.linkedin.com/in/nakbeen/" target="_blank" class="contact-icon">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <p>LinkedIn</p>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <a href="https://github.com/BNN2" target="_blank" class="contact-icon">
+                <i class="bi bi-github"></i>
+            </a>
+            <p>GitHub</p>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <a href="mailto:billalnakbeen@gmail.com" class="contact-icon">
+                <i class="bi bi-envelope"></i>
+            </a>
+            <p>Email</p>
+        </div>
+    </div>
+</section>
+
+<div class="neon-divider"></div>
+
+
+    <!-- Carousel Section -->
+    <section id="carousel-section" class="container py-5">
+        <h2 class="text-center">Gallery</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="carousel1.jpg" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="carousel2.jpg" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="carousel3.jpg" class="d-block w-100" alt="Slide 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  
+  <footer class="text-center py-3">
+    <p>&copy; 2024 Billal Nakbeen. All Rights Reserved.</p>
+</footer>
+
+</html>
